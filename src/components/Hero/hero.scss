@@ -1,0 +1,15 @@
+.jumbotron {
+  padding: 0px !important;
+  height: 40rem;
+  #hero-container {
+    height: 100%;
+    width: 100%;
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      background-image: url("../Hero/IMG_1327.PNG");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
