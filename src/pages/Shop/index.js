@@ -1,7 +1,7 @@
 import React from 'react'
 import {CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
 
-const CheckoutForm = () => {
+const Shop = () => {
   const stripe = useStripe();
   const elements = useElements();
 
@@ -34,11 +34,13 @@ const CheckoutForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="shop-form">
       <CardElement />
-      <button type="submit" disabled={!stripe}>
+      <button type="submit" disabled={!stripe} className="">
         Pay
       </button>
     </form>
   );
 };
+
+export default Shop;
